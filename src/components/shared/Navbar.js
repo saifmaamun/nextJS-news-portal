@@ -21,6 +21,11 @@ import { Stack } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import RedditIcon from '@mui/icons-material/Reddit';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Header from './Header';
+import logo from '../../app/assets/Logo.png'
+import Image from 'next/image';
 
 const navList = [
     {
@@ -54,66 +59,65 @@ const Navbar = () => {
 
 
     return (
-        <AppBar className="bg-black" position="static">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            px: 2,
-                            mx: 2,
+        <>
+            <Header />
+            <AppBar className="bg-black" position="static">
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Box sx={{
+                            m: 2,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'white',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        LOGO
-                    </Typography>
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
+
+                        }}>
+                            <Image src={logo} alt='logo' ></Image>
+                        </Box>
+                        <Box sx={{
+                            m: 2,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 900,
-                            letterSpacing: '.3rem',
-                            color: 'white',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        LOGO
-                    </Typography>
-                    <Box className="w-full text-center">
-                        {navList.map((route) => (
-                            <Link key={route} href={route.path}>
-                                <Button className='text-white'>
-                                    {route.route}
-                                </Button>
-                            </Link>
-                        ))}
-                    </Box>
-                    <Box >
-                        <Stack direction="row" className='space-x-2'>
-                            <FacebookIcon />
-                            <XIcon />
-                            <RedditIcon />
-                        </Stack>
-                    </Box>
+
+                        }}>
+                            <Image src={logo} alt='logo' ></Image>
+                        </Box>
+
+                        <Box className="w-full text-center">
+                            {navList.map((route) => (
+                                <Link key={route} href={route.path}>
+                                    <Button className='text-white'>
+                                        {route.route}
+                                    </Button>
+                                </Link>
+                            ))}
+                        </Box>
+                        <Box >
+                            <Stack direction="row" sx={{
+                                "& svg": {
+                                    color: 'white',
+                                }
+                            }}>
+                                <IconButton>
+                                    <FacebookIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <XIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <LinkedInIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <RedditIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <InstagramIcon />
+                                </IconButton>
+                            </Stack>
+                        </Box>
 
 
-                </Toolbar>
-            </Container>
-        </AppBar>
+                    </Toolbar>
+                </Container>
+            </AppBar >
+        </>
     );
 }
 export default Navbar;
