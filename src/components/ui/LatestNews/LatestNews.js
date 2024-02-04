@@ -134,7 +134,7 @@ const LatestNews = () => {
                                     Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again
                                 </Typography>
                                 <Typography gutterBottom className='my-2'>
-                                    By Awlad Hossain - Mar 18 2023
+                                    By Saif Maamun - Feb 04 2024
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........
