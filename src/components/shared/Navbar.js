@@ -38,7 +38,7 @@ const navList = [
     },
     {
         route: "Category",
-        path: "/categories"
+        path: "/categories/news"
     },
     {
         route: "News",

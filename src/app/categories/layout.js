@@ -1,17 +1,18 @@
+import CategoryList from '@/components/ui/CategoryList/CategoryList';
 import { Box, Container, Grid } from '@mui/material';
 import React from 'react';
 
-const CategoriesLayout = () => {
+const CategoriesLayout = ({ children }) => {
     return (
         <Box>
             <Container>
                 <Grid className='my-4' container spacing={2}>
                     <Grid item xs={3}>
-                        categories
+                        <CategoryList />
                     </Grid>
                     <Grid item xs={9}>
 
-                        news
+                        {children}
                     </Grid>
 
                 </Grid>
