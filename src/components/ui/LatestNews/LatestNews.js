@@ -1,15 +1,15 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
-import latestImage from '../../../app/assets/latest1.png';
-import gridImage1 from '../../../app/assets/latest2.png';
-import gridImage2 from '../../../app/assets/latest3.png';
-import gridImage3 from '../../../app/assets/latest4.png';
-import gridImage4 from '../../../app/assets/latest5.png';
+import latestImage from '../../../assets/latest1.png';
+import gridImage1 from '../../../assets/latest2.png';
+import gridImage2 from '../../../assets/latest3.png';
+import gridImage3 from '../../../assets/latest4.png';
+import gridImage4 from '../../../assets/latest5.png';
 import Image from 'next/image';
 
 const LatestNews = () => {
     return (
         <Box>
-            <Card className='w-full my-4'>
+            <Card className='w-full'>
                 <CardActionArea>
                     <CardMedia>
 
@@ -50,10 +50,10 @@ const LatestNews = () => {
                                     Technology
                                 </p>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again
+                                    EU’s New Sanctions Aim to Cut Russia Off From World Bank
                                 </Typography>
-                                <Typography gutterBottom className='my-2'>
-                                    By Awlad Hossain - Mar 18 2023
+                                <Typography gutterBottom variant="body2" className='my-2'>
+                                    By Saif Maamun - Feb 04 2024
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........
@@ -77,7 +77,7 @@ const LatestNews = () => {
                                     Technology
                                 </p>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again
+                                    Battle Analysis: Russian Tank Armada vs Ukraine
                                 </Typography>
                                 <Typography gutterBottom className='my-2'>
                                     By Awlad Hossain - Mar 18 2023
@@ -104,7 +104,7 @@ const LatestNews = () => {
                                     Technology
                                 </p>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again
+                                    France’s Largest Business Summit to Conclude on Mar 22
                                 </Typography>
                                 <Typography gutterBottom className='my-2'>
                                     By Awlad Hossain - Mar 18 2023
@@ -131,7 +131,7 @@ const LatestNews = () => {
                                     Technology
                                 </p>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again
+                                    Marquez Explains Lack of Confidence During Qatar GP
                                 </Typography>
                                 <Typography gutterBottom className='my-2'>
                                     By Saif Maamun - Feb 04 2024

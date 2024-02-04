@@ -1,17 +1,18 @@
 import LatestNews from '@/components/ui/LatestNews/LatestNews';
+import SideBar from '@/components/ui/Sidebar/SideBar';
 import { Grid } from '@mui/material';
 import React from 'react';
 
 const HomePage = () => {
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid className='my-4' container spacing={2}>
         <Grid item xs={8}>
           <LatestNews />
         </Grid>
         <Grid item xs={4}>
 
-          <h1>SideBar</h1>
+          <SideBar />
         </Grid>
 
       </Grid>

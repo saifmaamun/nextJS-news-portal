@@ -24,7 +24,7 @@ import RedditIcon from '@mui/icons-material/Reddit';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Header from './Header';
-import logo from '../../app/assets/Logo.png'
+import logo from '../../assets/Logo.png'
 import Image from 'next/image';
 
 const navList = [
@@ -38,7 +38,7 @@ const navList = [
     },
     {
         route: "Category",
-        path: "/category"
+        path: "/categories"
     },
     {
         route: "News",

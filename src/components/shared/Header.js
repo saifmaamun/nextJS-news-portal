@@ -1,7 +1,7 @@
 import { getCurrentDateInfo } from '@/utils/getDate';
 import { Box, Container, Typography } from '@mui/material';
 import Image from 'next/image';
-import headerlogo from '../../app/assets/The Dragon News.png'
+import headerlogo from '../../assets/headerLogo.png'
 
 const Header = () => {
     const date = getCurrentDateInfo()
