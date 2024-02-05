@@ -4,7 +4,7 @@ import React from 'react';
 
 const CategoriesLayout = ({ children }) => {
     return (
-        <Box>
+        <Box className="mt-5">
             <Container>
                 <Grid className='my-4' container spacing={2}>
                     <Grid item xs={3}>

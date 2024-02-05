@@ -1,9 +1,9 @@
 import React from 'react';
 
-const DynamicNewsPage = () => {
+const DynamicNewsPage = ({ params, searchParams }) => {
     return (
         <div>
-            <h1>Dynamic News</h1>
+            <h1>Dynamic News {searchParams.category}</h1>
         </div>
     );
 };
